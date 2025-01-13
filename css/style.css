@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -46,6 +47,7 @@ header img {
   color: #1c1c1c;
   cursor: pointer;
   border-radius: 2px;
+  transition: 0.4s;
 }
 
 main {
@@ -56,7 +58,6 @@ main {
 }
 
 main #welcome {
-  margin-top: 65px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -87,8 +88,29 @@ main #welcome .greeting {
   border-radius: 50%;
   border: 2px solid #000000;
   box-shadow: 0 0 20px 3px white;
+  filter: grayscale(100%);
+}
+
+#my-profile img:hover {
+  filter: none;
+  transition: 0.5s;
 }
 
 #my-profile .caption {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+}
+
+#my-profile .my-name {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#my-profile #about-me {
+  padding: 4px;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-family: "Open sans";
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 5px white;
 }
