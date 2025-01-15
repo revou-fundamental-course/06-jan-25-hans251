@@ -50,35 +50,89 @@
           <button id="about-me">About me</button>
         </div>
       </section>
-      
+
       <section id="project">
+        <h2 class="desc">Here are my projects so far:</h2>
         <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img src="image/doc.png" class="image-slide" />
+            <div class="text fade">Documentation Page</div>
+          </div>
 
           <div class="mySlides fade">
-            <img src="image/doc.png" class="image-slide">
-            <div class="text">Caption Text</div>
+            <img src="image/landing.png" class="image-slide" />
+            <div class="text fade">Landing Page</div>
           </div>
-          
+
           <div class="mySlides fade">
-            <img src="image/landing.png" class="image-slide">
-            <div class="text">Caption Two</div>
+            <img src="image/survey.png" class="image-slide" />
+            <div class="text fade">Survey Page</div>
           </div>
-          
-          <div class="mySlides fade">
-            <img src="image/survey.png" class="image-slide">
-            <div class="text">Caption Three</div>
-          </div>
-          
+
           <a class="prev" onclick="plusSlides(-1)">❮</a>
           <a class="next" onclick="plusSlides(1)">❯</a>
-          
-          </div>
+        </div>
       </section>
 
       <section id="message-me">
-        <form action="">
-          
-        </form>
+        <div class="form-container">
+          <h2>Message me</h2>
+          <form action="">
+            <div class="row">
+              <div class="col-25">
+                <label for="name">Name</label>
+              </div>
+              <div class="col-75">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Your name.."
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="date">Date</label>
+              </div>
+              <div class="col-75">
+                <input type="date" id="date" name="date" />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <p>Gender</p>
+              </div>
+              <div class="col-75">
+                <label for="man"
+                  ><input type="radio" name="radio" id="man" />Man</label
+                >
+                <label for="woman"
+                  ><input type="radio" name="radio" id="woman" />Woman</label
+                >
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-25">
+                <label for="subject">Message</label>
+              </div>
+              <div class="col-75">
+                <textarea
+                  id="subject"
+                  name="subject"
+                  placeholder="Bro you stink..."
+                  style="height: 200px"
+                ></textarea>
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <input type="submit" value="Submit" />
+            </div>
+          </form>
+        </div>
+
+        <div class="client-value"></div>
       </section>
     </main>
 
