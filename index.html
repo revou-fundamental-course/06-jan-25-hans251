@@ -88,28 +88,29 @@
                   id="name"
                   name="name"
                   placeholder="Your name.."
+                  required
                 />
               </div>
             </div>
             <div class="row">
               <div class="col-25">
-                <label for="date">Date</label>
+                <label for="date">Birth Date</label>
               </div>
               <div class="col-75">
-                <input type="date" id="date" name="date" />
+                <input type="date" id="date" name="date" required />
               </div>
             </div>
             <div class="row">
               <div class="col-25">
-                <p>Gender</p>
+                <p>Gender:</p>
               </div>
               <div class="col-75">
-                <label for="man"
-                  ><input type="radio" name="radio" id="man" />Man</label
-                >
-                <label for="woman"
-                  ><input type="radio" name="radio" id="woman" />Woman</label
-                >
+                <label for="male">
+                    <input type="radio" id="male" name="gender" value="Male" required> Male
+                </label>
+                <label for="female">
+                    <input type="radio" id="female" name="gender" value="Female" required> Female
+                </label>
               </div>
             </div>
             <div class="row">
@@ -127,12 +128,14 @@
             </div>
             <br />
             <div class="row">
-              <input type="submit" value="Submit" />
+              <button type="submit" value="submit" id="contact-form">
+                Submit
+              </button>
             </div>
           </form>
         </div>
 
-        <div class="client-value"></div>
+        <div id="client-value"></div>
       </section>
     </main>
 

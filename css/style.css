@@ -234,7 +234,7 @@ label {
   display: inline-block;
 }
 
-input[type="submit"] {
+#message-btn {
   background-color: #1a1a1a;
   color: #eaeaea;
   padding: 12px 20px;
@@ -244,7 +244,7 @@ input[type="submit"] {
   width: 100%;
 }
 
-input[type="submit"]:hover {
+#message-btn:hover {
   background-color: #eaeaea;
   color: #1a1a1a;
 }
@@ -276,9 +276,10 @@ input[type="submit"]:hover {
   }
 }
 
-.client-value {
+#client-value {
   border: 1px solid white;
   width: 45%;
   height: 500px;
   margin-right: 20px;
+  color: white;
 }
