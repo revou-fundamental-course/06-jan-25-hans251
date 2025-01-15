@@ -42,7 +42,6 @@
 
       <section id="my-profile">
         <img src="image/photo.png" alt="photo profile" />
-
         <div class="caption">
           <p>Hi, My name is</p>
           <p class="my-name">Hafiz Ansyari</p>
@@ -80,13 +79,13 @@
           <form action="">
             <div class="row">
               <div class="col-25">
-                <label for="name">Name</label>
+                <label for="cName">Name</label>
               </div>
               <div class="col-75">
                 <input
                   type="text"
-                  id="name"
-                  name="name"
+                  id="cName"
+                  name="cName"
                   placeholder="Your name.."
                   required
                 />
@@ -106,41 +105,63 @@
               </div>
               <div class="col-75">
                 <label for="male">
-                    <input type="radio" id="male" name="gender" value="Male" required> Male
+                  <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Male"
+                    required
+                  />
+                  Male
                 </label>
                 <label for="female">
-                    <input type="radio" id="female" name="gender" value="Female" required> Female
+                  <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Female"
+                    required
+                  />
+                  Female
                 </label>
               </div>
             </div>
             <div class="row">
               <div class="col-25">
-                <label for="subject">Message</label>
+                <label for="message-client">Message</label>
               </div>
               <div class="col-75">
                 <textarea
-                  id="subject"
-                  name="subject"
+                  id="message-client"
+                  name="message-client"
                   placeholder="Bro you stink..."
                   style="height: 200px"
+                  max="250"
                 ></textarea>
               </div>
             </div>
             <br />
             <div class="row">
-              <button type="submit" value="submit" id="contact-form">
-                Submit
-              </button>
+              <button type="submit" id="contact-form">Submit</button>
             </div>
           </form>
         </div>
 
-        <div id="client-value"></div>
+        <div id="client-value">
+          <p><strong>Current Time:</strong></p>
+          <br />
+          <p><strong>Name:</strong></p>
+          <p><strong>Birth Of Date:</strong></p>
+          <p><strong>Gender:</strong></p>
+          <p><strong>Message:</strong></p>
+        </div>
       </section>
     </main>
 
     <!-- Ini footer -->
-    <footer></footer>
+    <footer>
+      <p>created by <a href="https://github.com/hans251" target="_blank">Hafiz Ansyari</a></p>
+    </footer>
 
     <script src="js/main.js"></script>
   </body>
